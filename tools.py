@@ -14,6 +14,9 @@ class Camera:
         
         self.palette = 0
         self.c_pressed = False
+        
+        self.zoom_speed = 0.975
+        self.dezoom_speed = 1.025
 
     def handle_input(self, window):
         mouse_pos = window.get_cursor_pos() 
@@ -35,9 +38,9 @@ class Camera:
 
         zoom_factor = 1.0
         if window.is_pressed('a'):
-            zoom_factor = 0.975
+            zoom_factor = self.zoom_speed
         elif window.is_pressed('e'):
-            zoom_factor = 1.025
+            zoom_factor = self.dezoom_speed
             
         if zoom_factor != 1.0:
             new_zoom = self.zoom * zoom_factor
