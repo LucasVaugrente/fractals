@@ -35,9 +35,9 @@ class Camera:
 
         zoom_factor = 1.0
         if window.is_pressed('a'):
-            zoom_factor = 0.95
+            zoom_factor = 0.975
         elif window.is_pressed('e'):
-            zoom_factor = 1.05
+            zoom_factor = 1.025
             
         if zoom_factor != 1.0:
             new_zoom = self.zoom * zoom_factor
