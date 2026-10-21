@@ -8,7 +8,7 @@ ti.init(arch=ti.gpu)
 buf_x, buf_y = 1920, 1080
 pixels = ti.Vector.field(n=3, dtype=ti.f32, shape=(buf_x, buf_y))
 
-window = ti.ui.Window("Explorateur de Fractales (GPU)", (1200, 800), vsync=True)
+window = ti.ui.Window("Fractals", (1400, 1000), vsync=True)
 canvas = window.get_canvas()
 gui = window.get_gui()
 
@@ -17,7 +17,7 @@ panel = ControlPanel()
 
 while window.running:
     aspect_ratio = cam.handle_input(window)
-    panel.update(gui, cam)
+    panel.update(gui, cam, window)
 
     if panel.fractal_type == 0:
         render_julia(
