@@ -34,5 +34,48 @@ pip install -r requirements.txt
 python main.py
 ```
 
+## Tests
+
+### Julia Set
+
+<p align="center">
+	<img src="img/julia1.png" width="500">
+</p>
+
+<br/>
+
+<p align="center">
+	<img src="img/julia2.png" width="500">
+</p>
+
+<br/>
+
+<p align="center">
+	<img src="img/julia3.png" width="500">
+</p>
+
+<br/>
+
+
+### Mandelbrot Set
+
+<p align="center">
+	<img src="img/mandelbrot1.png" width="500">
+</p>
+
+<br/>
+
+<p align="center">
+	<img src="img/mandelbrot2.png" width="500">
+</p>
+
+<br/>
+
+<p align="center">
+	<img src="img/mandelbrot3.png" width="500">
+</p>
+
+<br/>
+
 # 🙎‍♂️ Crédits
 * [Lucas Vaugrente](https://github.com/LucasVaugrente "Mon compte GitHub")
